@@ -1,0 +1,163 @@
+@import "../../global.scss";
+
+.portfolio {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tabs li {
+        padding: 10px 20px;
+    }
+    
+    .tabs li a {
+        color: $mainColor;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: all .5s ease;
+
+        &.active {
+            background-color: $mainColor;
+            color: #ffffff;
+            transition: all .5s ease;
+        }
+
+        &:hover {
+            background-color: $mainColor;
+            color: #ffffff;
+            transition: all .5s ease;
+        }
+    }
+
+    #tab-content div:not(.cat21) {
+        display: none;
+    }
+
+    ul.tabs {
+        margin-bottom: 50px;
+        overflow: unset;
+    }
+
+    h1 {
+        font-size: 50px;
+        overflow: unset;
+    }
+
+    ul {
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        overflow: unset;
+    }
+
+    .container {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-height: 60%;
+
+        .item {
+            width: 220px;
+            height: 150px;
+            border-radius: 20px;
+            border: 1px solid rgb(221, 221, 221);
+            margin: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            position: relative;
+            transition: all .5s ease;
+            cursor: pointer;
+            overflow: hidden;
+
+            &:hover {
+                color: #ffffff;
+            }
+
+            h3 {
+                position: absolute;
+                font-size: 20px;
+                text-align: center;
+                padding: 0 15px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                z-index: 1;
+            }
+
+            &:hover {
+                background-color: $mainColor;
+
+                img {
+                    opacity: 0.2;
+                    z-index: 0;
+                }
+            }
+        }
+
+
+        * { margin: 0; padding: 0; }
+
+#tabmenu {
+    margin: 20px 0 0 20px;
+}
+
+li, p { font: 12px/16px Arial, Helvetica, sans-serif; }
+
+#nav {
+    overflow: hidden;
+    padding-left: 0;
+}
+
+#nav li {
+    float: left;
+    list-style: none;
+    background: #EEE;
+}
+
+#nav li a {    
+    padding: 10px;
+    border-top: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    display: block;
+    background: #CCC;
+}
+
+#nav li:first-child a {
+    border-left: 1px solid #CCC;
+}
+
+#tab-content {
+    border: 1px solid #CCC;
+    padding: 10px;
+    width: 300px;
+    margin-top: -1px;
+    -moz-border-radius: 0 0 5px 5px;
+}
+
+#nav li a.active {
+    background: #FFF;
+    margin-bottom: -3px;
+}
+    }
+
+    .comp {
+        width: 500px;
+    }
+}
+
+#nav li.tabs-li:first-child {
+    a {
+        color: #ffffff;
+        background-color: $mainColor;
+    }
+}
