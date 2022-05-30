@@ -93,3 +93,11 @@
         }
     }
 }
+
+.logo:after {
+    content: "}";
+}
+
+.logo:before {
+    content: "{";
+}
